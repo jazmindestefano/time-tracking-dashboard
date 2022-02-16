@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --background: #0D1323;
+    --personal-bg: #5746EA;
+    --dark-violet: #1D204B;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--background);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activities {
+    display: grid;
+    grid-template-columns: repeat(3, 13rem);
+    grid-template-rows: repeat(2, 15rem);
+    margin-left: 1rem;
+}
+
+.work-background , .play-background , .study-background , .exercise-background , .social-background , .selfcare-background {
+    color: white;
+    border-radius: 20px;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightcoral;
+}
+
+.play-background {
+    background-color: lightcyan;
+}
+
+.study-background {
+    background-color: lightgreen;
+}
+
+.exercise-background {
+    background-color: lightskyblue;
+}
+
+.social-background {
+    background-color: lightsalmon;
+}
+
+.selfcare-background {
+    background-color: lightyellow;
+}
+
+.work , .play , .exercise , .social, .selfcare , .study{
+    width: 95%;
+    height: 100%;
+    margin-top: 2rem;
+    background-color: #0D1323;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1.5rem;
+    font-size: small;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title h1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.title button{
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.title button:hover {
+    opacity: 0.6;
+}
+
+.work div span , 
+.play div span , 
+.study div span , 
+.exercise div span , 
+.social div span , 
+.selfcare div span{
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+.work div p , 
+.play div p , 
+.study div p , 
+.exercise div p , 
+.social div p , 
+.selfcare div p{
+    font-size: 0.6rem;
+    font-weight: 100;
+    color: rgb(146, 143, 143);
+}
+
+/* LADO PERFIL PERSONAL */
+
+.container .personal-profile-and-options {
+    background-color: var(--dark-violet);
+    border-radius: 20px;
+    display: grid;
+    grid-row-start: span 2;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.container .personal-profile-and-options .person-profile {
+    background-color: var(--personal-bg);
+    width: 100%;
+    border-radius: 20px;
+    height: 20rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+    padding-bottom: 2.5rem;
+}
+
+.container .personal-profile-and-options .person-profile img {
+    width: 4rem;
+}
+
+.container .personal-profile-and-options .person-profile span {
+    font-weight: 300;
+    color: rgb(235, 230, 230);
+    font-size: x-small;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 4rem;
+    margin-bottom: 0.1rem;
+}
+
+.container .personal-profile-and-options .person-profile h1 {
+    color: white;
+    font-size: 150%;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+}
+
+.personal-profile-and-options .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    padding-left: 0.5rem;
+    list-style: none;
+}
+
+.personal-profile-and-options .buttons button {
+    cursor: pointer;
+    margin: 0.3rem;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+}
+
+.personal-profile-and-options .buttons button:hover {
+    color: white;
+    opacity: 0.6;
+}
+
+@media (max-width: 830px){
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 0.5rem;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .activities {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .work-background , 
+    .play-background{
+        margin-bottom: 4rem;
+    }
+    
+    .study-background , 
+    .exercise-background{
+        margin-bottom: 2rem;
+    }
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .title h1 {
+        margin-right: 8rem;
+    }
+
+    .hours {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .container .personal-profile-and-options {
+        width: 40rem;
+        height: 16rem;
+        margin-bottom: 3.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .container .personal-profile-and-options .person-profile {
+        width: 100%;
+        height: 10rem;
+        width: 37rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .personal-profile-and-options .buttons {
+        flex-direction: row;
+        padding: 1rem;
+    }
+    
+    .personal-profile-and-options .buttons button {
+        color: white;
+    }
+
+    .container .personal-profile-and-options .person-profile img {
+        width: 6rem;
+        border: 2px solid white;
+        border-radius: 80%;
+        margin-top: 1.5rem;
+    }
+
+    .container .personal-profile-and-options .person-profile span {
+        margin: 0;
+        margin-left: 1rem;
+        display: block;
+    }
+
+    .container .personal-profile-and-options .person-profile h1 {
+        display: block;
+        font-size: xx-large;
+        font-weight: 500;
+    }
+
+    .personal-profile-and-options .person-profile div {
+        width: 100%;
+        height: 7rem;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: colum;
+        margin-left: 2rem;
+    }
+}

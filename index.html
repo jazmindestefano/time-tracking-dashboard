@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
     <title>Time Tracking DashBoard</title>
 </head>
 <body>
@@ -14,29 +17,32 @@
         </h1>
     </header>
 
-    <main>
-        <div class="personal-profile">
-            <div class="person-name">
+    <main class="container">
+
+        <div class="personal-profile-and-options">
+            <div class="person-profile">
                 <img src="images/image-jeremy.png" alt="jeremy icon">
-                <span>Report for</span>
-                <h1>Jeremy Robson</h1>
+                <div>
+                    <span>Report for</span>
+                    <h1>Jeremy Robson</h1>
+                </div>
             </div>
-            <ol>
-                <li>Daily</li>
-                <li>Weekly</li>
-                <li>Monthly</li>
-            </ol>
+            <div class="buttons">
+                <button>Daily</button>
+                <button>Weekly</button>
+                <button>Monthly</button>
+            </div>
         </div>
 
         <div class="activities">
 
             <div class="work-background">
                 <div class="work">
-                    <div>
+                    <div class="title">
                         <h1>Work</h1>
                         <button>...</button>
                     </div>
-                    <div>
+                    <div class="hours">
                         <span>32hrs</span>
                         <p>Last week - 36hrs</p>
                     </div>
@@ -44,11 +50,11 @@
             </div>
             <div class="play-background">
                 <div class="play">
-                    <div>
+                    <div class="title">
                         <h1>Play</h1>
                         <button>...</button>
                     </div>
-                    <div>
+                    <div class="hours">
                         <span>10hrs</span>
                         <p>Last week - 8hrs</p>
                     </div>
@@ -56,11 +62,11 @@
             </div>
             <div class="study-background">
                 <div class="study">
-                    <div>
+                    <div class="title">
                         <h1>Study</h1>
                         <button>...</button>
                     </div>
-                    <div>
+                    <div class="hours">
                         <span>7hrs</span>
                         <p>Last week - 8hrs</p>
                     </div>
@@ -68,11 +74,11 @@
             </div>
             <div class="exercise-background">
                 <div class="exercise">
-                    <div>
+                    <div class="title">
                         <h1>Exercise</h1>
                         <button>...</button>
                     </div>
-                    <div>
+                    <div class="hours">
                         <span>4hrs</span>
                         <p>Last week - 5hrs</p>
                     </div>
@@ -80,11 +86,11 @@
             </div>
             <div class="social-background">
                 <div class="social">
-                    <div>
+                    <div class="title">
                         <h1>Social</h1>
                         <button>...</button>
                     </div>
-                    <div>
+                    <div class="hours">
                         <span>5hrs</span>
                         <p>Last week - 10hrs</p>
                     </div>
@@ -92,11 +98,11 @@
             </div>
             <div class="selfcare-background">
                 <div class="selfcare">
-                    <div>
+                    <div class="title">
                         <h1>Self Care</h1>
                         <button>...</button>
                     </div>
-                    <div>
+                    <div class="hours">
                         <span>2hrs</span>
                         <p>Last week - 2hrs</p>
                     </div>
