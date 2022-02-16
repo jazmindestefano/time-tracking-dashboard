@@ -84,19 +84,19 @@ header{
     font-size: small;
 }
 
-.title{
+.title1{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.title h1{
+.title1 h1{
     font-size: 1rem;
     font-weight: 500;
 }
 
-.title button{
+.title1 button{
     background-color: transparent;
     border: none;
     font-size: 2rem;
@@ -107,7 +107,7 @@ header{
     margin-bottom: 1rem;
 }
 
-.title button:hover {
+.title1 button:hover {
     opacity: 0.6;
 }
 
@@ -239,14 +239,14 @@ header{
         margin-bottom: 2rem;
     }
 
-    .title {
+    .title1 {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
     }
 
-    .title h1 {
+    .title1 h1 {
         margin-right: 8rem;
     }
 
