@@ -160,7 +160,10 @@ header{
 }
 
 .container .personal-profile-and-options .person-profile img {
-    width: 4rem;
+    width: 5rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-bottom: 2rem;
 }
 
 .container .personal-profile-and-options .person-profile span {
