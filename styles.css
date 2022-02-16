@@ -196,6 +196,7 @@ header{
     font-weight: bold;
     border: none;
     background-color: transparent;
+    color: white;
 }
 
 .personal-profile-and-options .buttons button:hover {
