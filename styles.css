@@ -196,7 +196,6 @@ header{
 .personal-profile-and-options .buttons button {
     cursor: pointer;
     margin: 0.3rem;
-    font-weight: bold;
     border: none;
     background-color: transparent;
     color: white;
