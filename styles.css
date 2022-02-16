@@ -111,25 +111,38 @@ header{
     opacity: 0.6;
 }
 
-.work div input , 
-.play div input , 
-.study div input , 
-.exercise div input , 
-.social div input , 
-.selfcare div input{
-    font-size: 2.5rem;
-    font-weight: 100;
-    cursor: pointer;
+.hours {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.work div p , 
-.play div p , 
-.study div p , 
-.exercise div p , 
-.social div p , 
-.selfcare div p{
+.work-hours , 
+.play-hours, 
+.study-hours , 
+.exercise-hours, 
+.social-hours, 
+.selfcare-hours{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 3rem;
+}
+
+.work-hours-cantidad ,
+.play-hours-cantidad , 
+.study-hours-cantidad , 
+.exercise-hours-cantidad , 
+.social-hours-cantidad , 
+.selfcare-hours-cantidad{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white;
     font-size: 0.6rem;
-    font-weight: 100;
     color: rgb(146, 143, 143);
 }
 
@@ -320,12 +333,15 @@ header{
         box-sizing: border-box;
     }
 
-    header {
-        margin-left: 5.5rem;
-    }
-
     body {
         margin-left: 1rem;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 7rem;
     }
 
     .activities {
@@ -346,10 +362,11 @@ header{
         padding: 0;
     }
 
-    .study-background , .exercise-background , 
-    .play-background , .social-background , 
-    .work-background {
-        margin-bottom: 1rem;
+    .work-background{
+        margin-bottom: 6rem;
     }
 
+    .social-background {
+        margin-bottom: 1rem;
+    }
 }
