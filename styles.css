@@ -278,10 +278,6 @@ header{
         flex-direction: row;
         padding: 1rem;
     }
-    
-    .personal-profile-and-options .buttons button {
-        color: white;
-    }
 
     .container .personal-profile-and-options .person-profile img {
         width: 6rem;
