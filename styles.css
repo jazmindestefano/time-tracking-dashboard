@@ -309,3 +309,44 @@ header{
         margin-left: 2rem;
     }
 }
+
+@media (max-width: 450px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        margin-left: 5.5rem;
+    }
+
+    body {
+        margin-left: 1rem;
+    }
+
+    .activities {
+        grid-template-columns: 1fr;
+        margin-right: 0.5rem;
+    }
+
+    .container .personal-profile-and-options {
+        width: 91%;
+    }
+
+    .container .personal-profile-and-options .person-profile {
+        width: 100%;
+    }
+
+    .personal-profile-and-options .buttons {
+        margin: 0;
+        padding: 0;
+    }
+
+    .study-background , .exercise-background , 
+    .play-background , .social-background , 
+    .work-background {
+        margin-bottom: 1rem;
+    }
+
+}
