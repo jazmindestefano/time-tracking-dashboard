@@ -133,17 +133,32 @@ header{
 }
 
 .work-hours-cantidad ,
+.amount-of-work-hours , 
 .play-hours-cantidad , 
-.study-hours-cantidad , 
+.amount-of-play-hours ,
+.study-hours-cantidad ,
+.amount-of-study-hours , 
 .exercise-hours-cantidad , 
+.amount-of-exercise-hours , 
 .social-hours-cantidad , 
-.selfcare-hours-cantidad{
+.amount-of-social-hours , 
+.selfcare-hours-cantidad , 
+.amount-of-selfcare-hours{
     cursor: pointer;
     background-color: transparent;
     border: none;
     color: white;
     font-size: 0.6rem;
     color: rgb(146, 143, 143);
+}
+
+.amount-of-work-hours , 
+.amount-of-play-hours , 
+.amount-of-study-hours , 
+.amount-of-exercise-hours , 
+.amount-of-social-hours , 
+.amount-of-selfcare-hours{
+    width: 0.7rem;
 }
 
 /* LADO PERFIL PERSONAL */

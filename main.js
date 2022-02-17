@@ -18,30 +18,9 @@ window.addEventListener('load', (e) => {
     input_social_hours.value = "0hrs";
     input_selfcare_hours.value = "0hrs";
 
-    const input_work_hours_cantidad = document.querySelector(".work-hours-cantidad");
+    const span_amount_of_work_hours = document.querySelector(".amount-of-work-hours");
 
-    input_work_hours_cantidad.value = "Last week - 0hrs";
-
-    input_work_hours.addEventListener('click', () => {
-
-        input_work_hours.focus();
-
-        input_work_hours.addEventListener('keypress', (e) => {
-            
-            if (e.keyCode == 13) {
-                    const input_work_hours_new = input_work_hours.value;
-                    const input_work_hours_cantidad_new = input_work_hours_new * 7;
-                    alert(input_work_hours_new);
-                    input_work_hours.blur();
-                    return;
-            }
-
-           
-
-
-        });
-
-    });
+    span_amount_of_work_hours.value = "0";
    
     
 });
