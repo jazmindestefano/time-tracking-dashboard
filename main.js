@@ -22,7 +22,12 @@ window.addEventListener('load', (e) => {
     let weekly_button = document.querySelector(".weekly-button");
     let monthly_button = document.querySelector(".monthly-button");
 
-    let word = document.querySelector(".word");
+    let work_word = document.querySelector(".work-word");
+    let play_word = document.querySelector(".play-word");
+    let study_word = document.querySelector(".study-word");
+    let exercise_word = document.querySelector(".exercise-word");
+    let social_word = document.querySelector(".social-word");
+    let selfcare_word = document.querySelector(".selfcare-word");
 
     input_work_hours.value = "0";
     input_play_hours.value = "0";
@@ -56,13 +61,13 @@ window.addEventListener('load', (e) => {
            daily_button.addEventListener('click', () => {
                 const work_value_per_day = work_value * 1;
                 amount_of_work_hours.value = work_value_per_day;
-                word.textContent = "day";
+                work_word.textContent = "day";
                 localStorage.setItem("work_value_per_day", work_value_per_day);
                 console.log(localStorage.getItem("work_value_per_day"));
            });
 
            weekly_button.addEventListener('click', () => {
-                word.textContent = "week";
+                work_word.textContent = "week";
                 const work_value_per_week = work_value * 5;
                 amount_of_work_hours.value = work_value_per_week;
            });
@@ -70,7 +75,7 @@ window.addEventListener('load', (e) => {
            monthly_button.addEventListener('click', () => {
             const work_value_per_month = work_value * 20;
             amount_of_work_hours.value = work_value_per_month;
-            word.textContent = "month";
+            work_word.textContent = "month";
             localStorage.setItem("work_value_per_day", work_value_per_month);
             console.log(localStorage.getItem("work_value_per_month"));
             });
@@ -95,13 +100,13 @@ window.addEventListener('load', (e) => {
            daily_button.addEventListener('click', () => {
             const play_value_per_day = play_value * 1;
             amount_of_play_hours.value = play_value_per_day;
-            word.textContent = "day";
+            play_word.textContent = "day";
             localStorage.setItem("play_value_per_day", play_value_per_day);
             console.log(localStorage.getItem("play_value_per_day"));
             });
 
             weekly_button.addEventListener('click', () => {
-                word.textContent = "week";
+                play_word.textContent = "week";
                 const play_value_per_week = play_value * 5;
                 amount_of_play_hours.value = play_value_per_week;
            });
@@ -109,7 +114,7 @@ window.addEventListener('load', (e) => {
             monthly_button.addEventListener('click', () => {
             const play_value_per_month = play_value * 20;
             amount_of_play_hours.value = play_value_per_month;
-            word.textContent = "month";
+            play_word.textContent = "month";
             localStorage.setItem("play_value_per_day", play_value_per_month);
             console.log(localStorage.getItem("play_value_per_month"));
             });
@@ -129,6 +134,29 @@ window.addEventListener('load', (e) => {
            amount_of_study_hours.value = study_value_per_week;
            localStorage.setItem("study_value_per_week", study_value_per_week);
            console.log(localStorage.getItem("study_value_per_week"));
+
+           daily_button.addEventListener('click', () => {
+            const study_value_per_day = study_value * 1;
+            amount_of_study_hours.value = study_value_per_day;
+            study_word.textContent = "day";
+            localStorage.setItem("study_value_per_day", study_value_per_day);
+            console.log(localStorage.getItem("study_value_per_day"));
+            });
+
+            weekly_button.addEventListener('click', () => {
+                study_word.textContent = "week";
+                const study_value_per_week = study_value * 5;
+                amount_of_study_hours.value = study_value_per_week;
+           });
+
+            monthly_button.addEventListener('click', () => {
+            const study_value_per_month = study_value * 20;
+            amount_of_study_hours.value = study_value_per_month;
+            study_word.textContent = "month";
+            localStorage.setItem("study_value_per_day", study_value_per_month);
+            console.log(localStorage.getItem("study_value_per_month"));
+            });
+
         }
     });
 
@@ -144,6 +172,28 @@ window.addEventListener('load', (e) => {
            amount_of_exercise_hours.value = exercise_value_per_week;
            localStorage.setItem("exercise_value_per_week", exercise_value_per_week);
            console.log(localStorage.getItem("exercise_value_per_week"));
+            
+           daily_button.addEventListener('click', () => {
+            const exercise_value_per_day = exercise_value * 1;
+            amount_of_exercise_hours.value = exercise_value_per_day;
+            exercise_word.textContent = "day";
+            localStorage.setItem("exercise_value_per_day", exercise_value_per_day);
+            console.log(localStorage.getItem("exercise_value_per_day"));
+            });
+
+            weekly_button.addEventListener('click', () => {
+                exercise_word.textContent = "week";
+                const exercise_value_per_week = exercise_value * 5;
+                amount_of_exercise_hours.value = exercise_value_per_week;
+           });
+
+            monthly_button.addEventListener('click', () => {
+            const exercise_value_per_month = exercise_value * 20;
+            amount_of_exercise_hours.value = exercise_value_per_month;
+            exercise_word.textContent = "month";
+            localStorage.setItem("exercise_value_per_day", exercise_value_per_month);
+            console.log(localStorage.getItem("exercise_value_per_month"));
+            });
         }
     });
 
@@ -159,6 +209,28 @@ window.addEventListener('load', (e) => {
            amount_of_social_hours.value = social_value_per_week;
            localStorage.setItem("social_value_per_week", social_value_per_week);
            console.log(localStorage.getItem("social_value_per_week"));
+            
+           daily_button.addEventListener('click', () => {
+            const social_value_per_day = social_value * 1;
+            amount_of_social_hours.value = social_value_per_day;
+            social_word.textContent = "day";
+            localStorage.setItem("social_value_per_day", social_value_per_day);
+            console.log(localStorage.getItem("social_value_per_day"));
+            });
+
+            weekly_button.addEventListener('click', () => {
+                social_word.textContent = "week";
+                const social_value_per_week = social_value * 5;
+                amount_of_social_hours.value = social_value_per_week;
+           });
+
+            monthly_button.addEventListener('click', () => {
+            const social_value_per_month = social_value * 20;
+            amount_of_social_hours.value = social_value_per_month;
+            social_word.textContent = "month";
+            localStorage.setItem("social_value_per_day", social_value_per_month);
+            console.log(localStorage.getItem("social_value_per_month"));
+            });
         }
     });
 
@@ -174,6 +246,28 @@ window.addEventListener('load', (e) => {
            amount_of_selfcare_hours.value = selfcare_value_per_week;
            localStorage.setItem("selfcare_value_per_week", selfcare_value_per_week);
            console.log(localStorage.getItem("selfcare_value_per_week"));
+
+           daily_button.addEventListener('click', () => {
+            const selfcare_value_per_day = selfcare_value * 1;
+            amount_of_selfcare_hours.value = selfcare_value_per_day;
+            selfcare_word.textContent = "day";
+            localStorage.setItem("selfcare_value_per_day", selfcare_value_per_day);
+            console.log(localStorage.getItem("selfcare_value_per_day"));
+            });
+
+            weekly_button.addEventListener('click', () => {
+                selfcare_word.textContent = "week";
+                const selfcare_value_per_week = selfcare_value * 5;
+                amount_of_selfcare_hours.value = selfcare_value_per_week;
+           });
+
+            monthly_button.addEventListener('click', () => {
+            const selfcare_value_per_month = selfcare_value * 20;
+            amount_of_selfcare_hours.value = selfcare_value_per_month;
+            selfcare_word.textContent = "month";
+            localStorage.setItem("selfcare_value_per_day", selfcare_value_per_month);
+            console.log(localStorage.getItem("selfcare_value_per_month"));
+            });
         }
     });
  
