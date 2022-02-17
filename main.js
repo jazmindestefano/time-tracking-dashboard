@@ -11,6 +11,13 @@ window.addEventListener('load', (e) => {
     let input_social_hours = document.querySelector(".social-hours");
     let input_selfcare_hours = document.querySelector(".selfcare-hours");
 
+    let amount_of_work_hours = document.querySelector(".amount-of-work-hours");
+    let amount_of_play_hours = document.querySelector(".amount-of-play-hours");
+    let amount_of_study_hours = document.querySelector(".amount-of-study-hours");
+    let amount_of_exercise_hours = document.querySelector(".amount-of-exercise-hours");
+    let amount_of_social_hours = document.querySelector(".amount-of-social-hours");
+    let amount_of_selfcare_hours = document.querySelector(".amount-of-selfcare-hours");
+
     let daily_button = document.querySelector(".daily-button");
     let weekly_button = document.querySelector(".weekly-button");
     let monthly_button = document.querySelector(".monthly-button");
@@ -21,13 +28,6 @@ window.addEventListener('load', (e) => {
     input_exercise_hours.value = "0";
     input_social_hours.value = "0";
     input_selfcare_hours.value = "0";
-
-    let amount_of_work_hours = document.querySelector(".amount-of-work-hours");
-    let amount_of_play_hours = document.querySelector(".amount-of-play-hours");
-    let amount_of_study_hours = document.querySelector(".amount-of-study-hours");
-    let amount_of_exercise_hours = document.querySelector(".amount-of-exercise-hours");
-    let amount_of_social_hours = document.querySelector(".amount-of-social-hours");
-    let amount_of_selfcare_hours = document.querySelector(".amount-of-selfcare-hours");
 
     amount_of_work_hours.value = "0";
     amount_of_play_hours.value = "0";
