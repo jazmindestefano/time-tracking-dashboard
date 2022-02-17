@@ -129,7 +129,28 @@ header{
     background-color: transparent;
     border: none;
     color: white;
+    width: 3.5rem;
     font-size: 3rem;
+}
+
+.work-hours-p ,
+.play-hours-p , 
+.study-hours-p , 
+.exercise-hours-p ,
+.social-hours-p ,
+.selfcare-hours-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-hours-span ,
+.play-hours-span , 
+.study-hours-span , 
+.exercise-hours-span ,
+.social-hours-span ,
+.selfcare-hours-span {
+    font-size: 2rem;
 }
 
 .work-hours-cantidad ,
